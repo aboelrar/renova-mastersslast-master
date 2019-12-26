@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/products"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credit card information"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Credit Card number"
+        android:textSize="@dimen/_12sdp"
+        android:backgroundTint="@color/appback"
+        android:paddingRight="@dimen/_10sdp"
+        android:drawableRight="@drawable/creditcard"
+        android:src="@drawable/creditcard"/>
+    <EditText
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="MM/YY"
+        android:textSize="@dimen/_12sdp"
+        android:backgroundTint="@color/appback"
+        android:paddingRight="@dimen/_10sdp"
+        android:src="@drawable/creditcard"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+        android:id="@+id/continueshopping"
+        android:text="اكمال الشراء"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/green"/>
+</LinearLayout>

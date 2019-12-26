@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appback"
+    tools:context="com.begroup.besoultion.drbooking.view.editData">
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:id="@+id/viewswitch">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <ProgressBar
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/transparent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/user"
+            android:padding="@dimen/_2sdp"
+            android:id="@+id/editimg"
+            android:src="@drawable/mahmoud" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/white"
+                    android:text="احمد سعد"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:id="@+id/username"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:textSize="@dimen/_13ssp" />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@android:color/white"
+                    android:text="01122334455"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:id="@+id/phone"
+                    android:layout_gravity="center"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:textSize="@dimen/_13ssp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@android:color/white"
+                    android:text="aa@gmail.com"
+                    android:gravity = "right"
+                    android:id="@+id/email"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:textSize="@dimen/_13ssp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/appback"
+                    android:text="@string/edit"
+                    android:id="@+id/edit"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:src="@drawable/user" />
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_43ssp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:src="@drawable/lockk" />
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_85sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_19sdp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/changepassword"
+            android:textSize="@dimen/_13ssp"
+            android:text="تغيير كلمه السر؟"/>
+        <ImageView
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="1sp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"/>
+</LinearLayout>
+
+    </ViewSwitcher>
+</LinearLayout>

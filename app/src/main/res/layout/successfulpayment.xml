@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/paymentsuccessful"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="شكرا لك "
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تم حجز المنتج بنجاح "
+        android:layout_marginTop="@dimen/_3sdp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_17sdp"/>
+
+</LinearLayout>

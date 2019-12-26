@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/productitem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="@dimen/_4sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_4sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_weight=".45"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:id="@+id/productName"
+                    android:text="علبه اسبرين"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center_vertical"
+                    android:layout_height="0dp" />
+                <LinearLayout
+                    android:layout_weight=".5"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="ريال "
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_height="match_parent" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:text="20 "
+                        android:id="@+id/price"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_weight=".3"
+                android:scaleType="fitXY"
+                android:id="@+id/imgproducts"
+                android:src="@drawable/asprine"
+                android:padding="@dimen/_3sdp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
